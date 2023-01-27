@@ -35,7 +35,7 @@ func main() {
 
 	httpPort := getEnvVar("DEVOPSTESTE_PORT")
 	if httpPort == "" {
-		httpPort = "8080"
+		httpPort = "80"
 	}
 
 	router.Run(":" + httpPort)
