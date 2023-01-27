@@ -4,4 +4,5 @@ COPY . .
 RUN go mod tidy
 ENV DEVOPSTESTE_PORT=80
 ENV DEVOPSTESTE_NAME="Amo Promo"
+EXPOSE 80
 RUN go build .
